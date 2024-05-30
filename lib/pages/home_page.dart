@@ -17,7 +17,12 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body:ProfileWidget(),
+      body:Column(
+        children: [
+          const ProfileWidget().buildProfile(context),
+
+        ],
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed:() {
 

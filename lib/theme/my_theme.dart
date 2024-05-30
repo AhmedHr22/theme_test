@@ -7,7 +7,8 @@ class MyTheme{
         backgroundColor: Colors.orangeAccent
       ),
       scaffoldBackgroundColor: Colors.white,
-      colorScheme: const ColorScheme.light()
+      colorScheme: const ColorScheme.light(),
+      iconTheme: IconThemeData(color: Colors.orange)
 
   );
 
