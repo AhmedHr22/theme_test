@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:them_test/theme/dark_theme.dart';
+import 'package:them_test/theme/my_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,9 +10,10 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
+    ThemeData homeTheme = MyTheme.darkTheme;
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: T,
+      theme: homeTheme,
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
@@ -31,11 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-      if(selectedTheme == DarkTheme ){
-        selectedTheme = LightTheme;
-      }else{
-        selectedTheme == DarkTheme;
-      }
+
       _counter++;
     });
   }
@@ -44,7 +41,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
       body: Center(
