@@ -4,14 +4,15 @@ import 'package:them_test/theme/dark_theme.dart';
 void main() {
   runApp(const MyApp());
 }
-ThemeData selectedTheme=DarkTheme;
+
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: selectedTheme,
+      theme: T,
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
@@ -64,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }
