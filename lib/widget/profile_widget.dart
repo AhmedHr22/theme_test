@@ -67,7 +67,7 @@ class ProfileWidget extends StatelessWidget {
           radius: 44,
           backgroundColor: Theme.of(context).scaffoldBackgroundColor,
           child: CircleAvatar(
-            backgroundColor: Colors.pink,
+            backgroundColor: Theme.of(context).colorScheme.background,
             radius: 40,
             child: Image.asset('asset/user1.png'),
           ),

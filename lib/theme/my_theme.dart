@@ -15,10 +15,10 @@ class MyTheme{
   static ThemeData lightTheme = ThemeData(
       appBarTheme: AppBarTheme(
           backgroundColor: Colors.deepPurple.shade300,
-          foregroundColor: Colors.black
       ),
       scaffoldBackgroundColor: Colors.black12,
-      colorScheme: const ColorScheme.dark()
+      colorScheme: const ColorScheme.dark(),
+      iconTheme: IconThemeData(color: Colors.deepPurple.shade300)
   );
 }
 

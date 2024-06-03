@@ -18,7 +18,7 @@ class _SwitchThemeWidgetState extends State<SwitchThemeWidget> {
         value: on,
         onChanged: (value) {
                 context.read<ThemeProvider>().toggleTheme(value);
-              // print(context.watch<ThemeProvider>().themeMode);
+
         },
     );
   }
