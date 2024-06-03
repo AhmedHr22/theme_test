@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:them_test/pages/home_page.dart';
 import 'package:them_test/providers/theme_provider.dart';
+import 'package:them_test/theme/my_theme.dart';
 
 class MyHttpOverrides extends HttpOverrides {
   @override
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      themeMode:context.watch<ThemeProvider>().themeMode,
+      theme:context.watch<ThemeProvider>().isDark ? MyTheme.darkTheme : MyTheme.lightTheme,
       home: const HomePage(title: 'Flutter Demo Home Page'),
     );
   }
