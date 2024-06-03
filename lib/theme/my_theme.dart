@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 
 class MyTheme{
 
   static ThemeData darkTheme = ThemeData(
-      appBarTheme: AppBarTheme(
+      appBarTheme: const AppBarTheme(
         backgroundColor: Colors.orangeAccent
       ),
       scaffoldBackgroundColor: Colors.white,
       colorScheme: const ColorScheme.light(),
-      iconTheme: IconThemeData(color: Colors.orange)
-
+      iconTheme: const IconThemeData(color: Colors.orange),
   );
 
   static ThemeData lightTheme = ThemeData(
